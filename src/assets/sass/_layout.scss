@@ -1,0 +1,84 @@
+/*
+ * LAYOUT
+** =============================================================== */
+
+.icone{
+    width:41px;
+}
+.body{
+    z-index: 1;
+    max-width: 450px;
+    margin: auto;
+}
+/* Main */
+.section:first-child{
+    margin-top: 36px;
+}
+.section:last-child{
+    margin-bottom: 180px;
+    margin-top: 72px;
+}
+.grid.section--marginBottom{
+    margin-bottom: 130px;
+}
+.images{
+    max-width: 100%;
+}
+.title--baton::after{
+    content: url(../images/phasme_baton.svg);
+    width: 100px;
+    display: inline-flex;
+    padding-left: 10px;
+}
+.title--feuille::after{
+    content: url(../images/phasme_feuille.svg);
+    width: 50px;
+    display: inline-flex;
+    padding-left: 10px;
+}
+.section.grid.user--hide{
+    display: none;
+}
+.btn{
+    margin-top: 18px;
+    background-color: #fff;
+    color: var(--color-primary);
+    border-radius: 15px;
+    padding: 13px 20px;
+    text-transform: uppercase;
+    border: solid 2px var(--color-primary);
+}
+
+.disabled {
+    background-color: #000;
+    color: #fff;
+    border: inherit;
+}
+.share_facebook:hover{
+    background-color:var(--color-primary) ;
+    color: var(--color-on-primary);
+}
+@media screen and (min-width: 768px) {
+    .body{
+        max-width: 650px;
+        margin: auto;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .body{
+        max-width: 1340px;
+        margin: auto;
+        
+        overflow: hidden;
+    }
+    .pgrid-end5__txt{
+        padding-bottom: 16px;
+    }
+    .grid.section--marginBottom{
+        margin-bottom: 64px;
+    }
+    .figure__image{
+        height: 430px;
+    }
+}

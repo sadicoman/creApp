@@ -1,0 +1,57 @@
+/*
+ * GRILLES
+** =============================================================== */
+/* Main */
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 16px 8px;
+    padding: 0px 18px;
+    margin-bottom: 36px;
+}
+.grid--navigation2{
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px 32px;
+}
+.grid > *{
+    grid-column: 1 / -1;
+}
+.mgrid-start3{
+    grid-column-start: 3;
+}
+.mgrid-end3{
+    grid-column-end: 3;
+}
+
+@media screen and (min-width: 1440px) {
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr repeat(4, 1fr) 1fr;
+        grid-gap: 32px 16px;
+        padding: 0px 72px;
+    }
+    .grid--navigation2{
+        grid-gap: 32px 64px;
+    }
+    .grid--navigation2 > *{
+        grid-column: 2 / 6;
+    }
+    .pgrid-end4{
+        grid-column-end: 4;
+    }
+    .pgrid-end5{
+        grid-column-end: 5;
+    }
+    .pgrid-end6{
+        grid-column-end: 6;
+    }
+    .pgrid-start2{
+        grid-column-start: 2;
+    }
+    .pgrid-start3{
+        grid-column-start: 3;
+    }
+    .pgrid-start4{
+        grid-column-start: 4;
+    }
+}

@@ -1,0 +1,86 @@
+/*
+ * LISTES
+** =============================================================== */
+
+/* *MENU 
+.menu{
+
+}
+.menu__liste{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.menu__el{
+
+}
+.menu__el a{
+    text-decoration: none;
+}
+.menu__el a:hover,.menu__el a:focus{
+    text-decoration: underline;
+}
+*/
+.menu{
+    /*max-width: 360px;*/
+    z-index: 5;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0 -1px 3px 0 rgba(0,0,0,0.5);
+    text-align: center;
+    background-color: var(--color-background-Menu);
+    &__liste{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    &__el{
+        padding: 10px;;
+        border-right: #000 1px solid;
+        .lien{
+            text-transform: uppercase;
+            width: 100%;
+        }
+        &:last-child{
+            border: none;
+        }
+    }
+}
+
+.liste__el::before{
+    content: url(../images/feuille.svg);
+    width: 20px;
+    display: inline-flex;
+    padding-right: 5px;
+}
+.liste__el{
+    display: flex;
+    align-items: center;
+}
+.liste--outils .liste__el::before{
+    content: url(../images/boite.svg);
+}
+
+
+@media screen and (min-width: 1440px) {
+    .menu{
+        
+        left: 0px;
+        top: 0px;
+        right: inherit;
+
+        &__liste{
+            grid-template-columns: 1fr;
+        }
+        &__el{
+            padding: 10px;;
+            border-right:inherit;
+            border-bottom: #000 1px solid;
+        }
+    }
+
+}
