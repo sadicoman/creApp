@@ -7,6 +7,16 @@
     grid-template-columns: repeat(5, 1fr);
     grid-gap: 16px 8px;
     margin-bottom: 15px;
+    animation : section 1s ease alternate;
+}
+@keyframes section {
+    0% {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    100% {
+        opacity: 1;              
+    }
 }
 .section > *{
     grid-column: 1 / -1;
@@ -25,6 +35,9 @@
     margin-bottom: 50px;
     // margin-top: 72px;
 }
+.section__p > p{
+    padding-top: 15px;
+} 
 /* FOOTER */
 
 .footer__liste{

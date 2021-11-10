@@ -51,7 +51,8 @@
     border: solid 2px var(--color-primary);
 }
 .section__img--train{
-    animation : train 2s ease alternate;
+    animation : train 3s ease alternate;
+    // animation-delay: 1s;
 }
 @keyframes train {
     0% {
