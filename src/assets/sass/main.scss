@@ -1,9 +1,9 @@
 /*!
 ***
-* TFA Project
+* Timeless Travels Project
 ***
-* Projet scolaire pour mon TFA de B2
-* option DWM
+* Projet scolaire CreaApp
+* option DWT
 *
 * @version: 1.0
 * @author: François Szczepkowski <francois.szcz@hotmail.fr>
@@ -18,13 +18,6 @@
 @use "_list.scss";
 @use "_var.scss" as v;
 
-.lien{
-    text-decoration: none; 
-    color: var(--color-on-primary);
-}
-.lien:hover, .lien:focus{
-    color: var(--color-secondary-variant);
-}
 
 /**
 * = TODO

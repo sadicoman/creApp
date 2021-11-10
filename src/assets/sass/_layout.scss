@@ -2,83 +2,134 @@
  * LAYOUT
 ** =============================================================== */
 
-.icone{
-    width:41px;
-}
-.body{
-    z-index: 1;
-    max-width: 450px;
+/* HEADER */
+.header{
+    max-width: 340px;
     margin: auto;
 }
-/* Main */
-.section:first-child{
-    margin-top: 36px;
+.body{
+    overflow: hidden;
 }
-.section:last-child{
-    margin-bottom: 180px;
-    margin-top: 72px;
-}
-.grid.section--marginBottom{
-    margin-bottom: 130px;
-}
-.images{
+.logo{
+    display: block;
+    width:90px;
+    height: 69px;
     max-width: 100%;
+    margin: auto;
 }
-.title--baton::after{
-    content: url(../images/phasme_baton.svg);
-    width: 100px;
-    display: inline-flex;
-    padding-left: 10px;
+.logo__img{
+    width:90px;
+    padding: 10px;
 }
-.title--feuille::after{
-    content: url(../images/phasme_feuille.svg);
-    width: 50px;
-    display: inline-flex;
-    padding-left: 10px;
+/* MAIN */
+// .section:first-child{
+//     margin-top: 36px;
+// }
+.section--white{
+    background-color: var(--color-background-variant);
+    padding: 30px 0px 15px 0px;
 }
-.section.grid.user--hide{
+.section{
+    max-width: 340px;
+    margin: auto;
+}
+.none{
     display: none;
 }
 .btn{
     margin-top: 18px;
-    background-color: #fff;
-    color: var(--color-primary);
-    border-radius: 15px;
-    padding: 13px 20px;
+    background-color: var(--color-primary);
+    color: var(--color-on-primary);
+    border-radius: 28px;
+    padding: 15px 60px;
     text-transform: uppercase;
     border: solid 2px var(--color-primary);
 }
-
-.disabled {
-    background-color: #000;
-    color: #fff;
-    border: inherit;
+.btn:hover{
+    background-color: inherit;
+    color: var(--color-primary);
+    border: solid 2px var(--color-primary);
 }
-.share_facebook:hover{
-    background-color:var(--color-primary) ;
-    color: var(--color-on-primary);
+.section__img--train{
+    animation : train 2s ease alternate;
 }
-@media screen and (min-width: 768px) {
-    .body{
-        max-width: 650px;
-        margin: auto;
+@keyframes train {
+    0% {
+        transform: translateX(-350px);
     }
 }
+
+
+
+
+
+
+// FOOTER
+.footer{
+    width: 100%;
+    height: 100%;
+    border-radius: 100% 100% 0 0;
+    background: var(--color-background-variant);
+    color: var(--color-on-background-variant);
+}
+.footer__createurs{
+    display:flex;
+    list-style: none;
+
+    .createurs__el{
+      padding-right: 10px;
+    }
+}
+.footer__lien{
+    color: var(--color-on-background-variant);
+    text-transform: uppercase;
+    &:hover{
+        color: var(--color-primary);
+    }
+}
+
+@media screen and (min-width: 768px) {
+//     .body{
+//         max-width: 650px;
+//         margin: auto;
+//     }
+    .section{
+        max-width: 768px;
+    }
+    @keyframes train {
+        0% {
+            transform: translateX(-750px);
+        }
+    }
+    
+}
+
+
+
+
 
 @media screen and (min-width: 1440px) {
-    .body{
-        max-width: 1340px;
-        margin: auto;
+    // .body{
+    //     max-width: 1340px;
+    //     margin: auto;
         
-        overflow: hidden;
+    //     overflow: hidden;
+    // }
+    .section{
+        max-width: 1440px;
     }
-    .pgrid-end5__txt{
-        padding-bottom: 16px;
+    @keyframes train {
+        0% {
+            transform: translateX(-1400px);
+        }
     }
-    .grid.section--marginBottom{
-        margin-bottom: 64px;
+    .header {
+        max-width: inherit;
+        margin: 0px;
     }
-    .figure__image{
-        height: 430px;
+    .logo{
+        margin: inherit;
+        padding-left: 40px;
+        padding-top: 10px;
     }
 }
