@@ -21,6 +21,31 @@
     width:90px;
     padding: 10px;
 }
+.section--nuage::before{
+    background-image: url(../images/nuage_gauche.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0px;
+    z-index: -5;
+}
+.section--nuage::after{
+    background-image: url(../images/nuage_droite.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 80px;
+    height: 80px;
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 15px;
+    z-index: -5;
+}
+
 /* MAIN */
 // .section:first-child{
 //     margin-top: 36px;
@@ -102,6 +127,29 @@
             transform: translateX(-750px);
         }
     }
+    .section--nuage::before{
+        // background-image: url(../images/nuage_gauche.svg);
+        // background-size: contain;
+        width: 200px;
+        height: 800px;
+        // content: "";
+        // position: absolute;
+        top: 0;
+        left: 45px;
+        z-index: -5;
+    }
+    .section--nuage::after{
+        // background-image: url(../images/nuage_droite.svg);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        width: 197px;
+        height: 900px;
+        // content: "";
+        // position: absolute;
+        top: -40px;
+        right: 15px;
+        z-index: -5;
+    }
     
 }
 
@@ -132,5 +180,28 @@
         margin: inherit;
         padding-left: 40px;
         padding-top: 10px;
+    }
+    .section--nuage::before{
+        // background-image: url(../images/nuage_gauche.svg);
+        // background-size: contain;
+        width: 350px;
+        height: 800px;
+        // content: "";
+        // position: absolute;
+        top: 30px;
+        left: 50px;
+        z-index: -5;
+    }
+    .section--nuage::after{
+        // background-image: url(../images/nuage_droite.svg);
+        // background-size: contain;
+        // background-repeat: no-repeat;
+        width: 350px;
+        height: 800px;
+        // content: "";
+        // position: absolute;
+        top: -110px;
+        right: 15px;
+        z-index: -5;
     }
 }
